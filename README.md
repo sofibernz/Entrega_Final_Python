@@ -9,8 +9,7 @@ Estas instrucciones te permitirán obtener una copia del proyecto en funcionamie
 Mira Deployment para conocer como desplegar el proyecto.
 
 Pre-requisitos 📋
-Que cosas necesitas para instalar el software y como instalarlas
-
+Necesitas tener instalado VisualCode Studio, 
 Da un ejemplo
 Instalación 🔧
 Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose

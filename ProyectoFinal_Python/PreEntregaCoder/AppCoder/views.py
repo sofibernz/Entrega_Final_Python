@@ -13,4 +13,4 @@ def productos(request):
 
 def sobreNosotros(request):
 
-    return render(request, 'AppCoder/Sobre nosotros.html')
+    return render(request, 'AppCoder/sobreNosotros.html')

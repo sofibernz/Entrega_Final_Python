@@ -1,11 +1,12 @@
 # ReEntregaPython
 Re-Entrega Python
+
 Creamos una página web
 
 Comenzando 🚀
 Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
 
-Mira Deployment para conocer como desplegar el proyecto.
+Mira Ejecución para conocer como desplegar el proyecto.
 
 Pre-requisitos 📋
 Necesitas tener instalado VisualCode Studio, Gitbash, Python y Django
@@ -13,22 +14,10 @@ Necesitas tener instalado VisualCode Studio, Gitbash, Python y Django
 Ejecución 🔧
 Abrir la carpeta del repositorio en VisualCode, abrir la terminal y ubicarse en la carpeta correcta. Una vez realizado ese paso, ejecutar el comando "python manage.py runserver" e ingresar al link del servidor agregando /AppCoder/inicio para ingresar a la vista principal de la web.
 
-
-
-
-Analice las pruebas end-to-end 🔩
-Explica que verifican estas pruebas y por qué
-
-Da un ejemplo
-Y las pruebas de estilo de codificación ⌨️
-Explica que verifican estas pruebas y por qué
-
-Da un ejemplo
-Despliegue 📦
-Agrega notas adicionales sobre como hacer deploy
+LLapagina consta de un menu que lleva a las siguientes vistas: Inicio, Productos, Cursos, Sobre Nosotros y formulario de Login.
 
 Construido con 🛠️
-Menciona las herramientas que utilizaste para crear tu proyecto
+Django
 
 Dropwizard - El framework web usado
 Maven - Manejador de dependencias

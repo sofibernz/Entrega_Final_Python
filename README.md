@@ -1,7 +1,6 @@
 # ReEntregaPython
 Re-Entrega Python
-Título del Proyecto
-Acá va un párrafo que describa lo que es el proyecto
+Creamos una página web
 
 Comenzando 🚀
 Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
@@ -9,21 +8,13 @@ Estas instrucciones te permitirán obtener una copia del proyecto en funcionamie
 Mira Deployment para conocer como desplegar el proyecto.
 
 Pre-requisitos 📋
-Necesitas tener instalado VisualCode Studio, 
-Da un ejemplo
-Instalación 🔧
-Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose
+Necesitas tener instalado VisualCode Studio, Gitbash, Python y Django
 
-Dí cómo será ese paso
+Ejecución 🔧
+Abrir la carpeta del repositorio en VisualCode, abrir la terminal y ubicarse en la carpeta correcta. Una vez realizado ese paso, ejecutar el comando "python manage.py runserver" e ingresar al link del servidor agregando /AppCoder/inicio para ingresar a la vista principal de la web.
 
-Da un ejemplo
-Y repite
 
-hasta finalizar
-Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo
 
-Ejecutando las pruebas ⚙️
-Explica como ejecutar las pruebas automatizadas para este sistema
 
 Analice las pruebas end-to-end 🔩
 Explica que verifican estas pruebas y por qué
@@ -52,17 +43,4 @@ Versionado 📌
 Usamos SemVer para el versionado. Para todas las versiones disponibles, mira los tags en este repositorio.
 
 Autores ✒️
-Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios
-
-Andrés Villanueva - Trabajo Inicial - villanuevand
-Fulanito Detal - Documentación - fulanitodetal
-También puedes mirar la lista de todos los contribuyentes quíenes han participado en este proyecto.
-
-Licencia 📄
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo LICENSE.md para detalles
-
-Expresiones de Gratitud 🎁
-Comenta a otros sobre este proyecto 📢
-Invita una cerveza 🍺 o un café ☕ a alguien del equipo.
-Da las gracias públicamente 🤓.
-etc.
+Sofia Magdalena Bernz - GRUPO 72 (Individual)

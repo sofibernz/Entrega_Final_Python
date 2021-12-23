@@ -8,4 +8,4 @@ admin.site.register(Productos)
 
 admin.site.register(Clientes)
 
-admin.site.register(Vendedores)
+admin.site.register(Cursos)

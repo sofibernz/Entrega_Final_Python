@@ -2,25 +2,31 @@
 
 {% load static %}
 
-{% block contenido %}
+    {% block contenido %}
 
-    <br><br><br>
-    <h1>Crear usuario</h1>
-    <br>
-
-    <form action="/AppCoder/clientesFormulario" method="POST">{% csrf_token%}
-        
-        <table>
-
-            {{ miFormulario.as_table }}
-
-        </table>
-        
+        <br><br><br>
+        <h1>Crear usuario</h1>
         <br>
+        
+        {% if miFormulario.errors %}
 
-        <input type="submit" value="Enviar">
-        <br><br>
-    </form>
-    
+        <p style="color: red;"> Datos erroneos.</p>
 
-{% endblock %}
+        {% endif %}
+
+        <form action="/AppCoder/clientesFormulario" method="POST">{% csrf_token%}
+            
+            <table>
+
+                {{ miFormulario.as_table }}
+
+            </table>
+            
+            <br>
+
+            <input type="submit" value="Enviar">
+            <br><br>
+        </form>
+        
+
+    {% endblock %}

@@ -1,13 +1,13 @@
-## Entrega Final Python
+# Entrega Final Python
 
 Creamos una página web <br>
 
-# Comenzando 🎬 <br>
+## Comenzando 🎬 <br>
 Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
 
 Mira Despegue para conocer como desplegar el proyecto.
 
-# Pre-requisitos 📋 <br>
+## Pre-requisitos 📋 <br>
 Necesitas tener instalado VisualCode Studio, Gitbash, Python y Django
 
 # Despegue 🚀 <br>

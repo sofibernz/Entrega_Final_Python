@@ -26,5 +26,5 @@ Django - Framework de desarrollo web de código abierto, escrito en Python, que 
 Python - Lenguaje de programación interpretado cuya filosofía hace hincapié en la legibilidad de su código.
 
 ## Autores ✒️ <br>
-Sofia Magdalena Bernz
+Sofia Magdalena Bernz <br>
 GRUPO 75 (Individual)

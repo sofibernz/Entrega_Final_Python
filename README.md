@@ -12,7 +12,6 @@ Necesitas tener instalado VisualCode Studio, Gitbash, Python y Django
 
 # Despegue 🚀 <br>
 Abrir la carpeta del repositorio en VisualCode, abrir la terminal y ubicarse en la carpeta correcta. <br><br>
-
 Una vez realizado ese paso, ejecutar el comando "python manage.py runserver" e ingresar al link del servidor agregando "/AppCoder/inicio" para ingresar a la vista principal de la web.
 <br><br>
 La pagina consta de un menu que lleva a las siguientes vistas:

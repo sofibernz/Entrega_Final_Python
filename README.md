@@ -2,7 +2,7 @@
 
 Creamos una página web <br>
 
-Comenzando ♣ <br>
+Comenzando 🎬 <br>
 Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
 
 Mira Despegue para conocer como desplegar el proyecto.

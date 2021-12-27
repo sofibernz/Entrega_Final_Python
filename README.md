@@ -2,19 +2,19 @@
 
 Creamos una página web <br>
 
-Comenzando 🎬 <br>
+# Comenzando 🎬 <br>
 Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
 
 Mira Despegue para conocer como desplegar el proyecto.
 
-Pre-requisitos 📋 <br>
+# Pre-requisitos 📋 <br>
 Necesitas tener instalado VisualCode Studio, Gitbash, Python y Django
 
 Despegue 🚀 <br>
 Abrir la carpeta del repositorio en VisualCode, abrir la terminal y ubicarse en la carpeta correcta. <br>
 Una vez realizado ese paso, ejecutar el comando "python manage.py runserver" e ingresar al link del servidor agregando /AppCoder/inicio para ingresar a la vista principal de la web.
 <br>
-La pagina consta de un menu que lleva a las siguientes vistas: #Inicio, Productos, Cursos, Sobre Nosotros y formulario de Login.
+La pagina consta de un menu que lleva a las siguientes vistas: Inicio, Productos, Cursos, Sobre Nosotros y formulario de Login.
 
 Construido con 🛠️ <br>
 Django - Framework de desarrollo web de código abierto, escrito en Python, que respeta el patrón de diseño conocido como modelo–vista–controlador. <br>

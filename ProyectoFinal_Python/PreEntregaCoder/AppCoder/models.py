@@ -30,3 +30,14 @@ class Cursos(models.Model):
     def __str__(self):
 
         return f"{self.curso} - Turno {self.turno} - ${self.precio}"
+
+class Consultas(models.Model):
+
+    nombre = models.CharField(max_length=40)
+    telefono = models.IntegerField()
+    email = models.EmailField()
+    consulta = models.CharField(max_length=150)
+
+    def __str__(self):
+
+        return f"Consulta: {self.consulta} - Datos de contacto: {self.nombre} - {self.telefono} - {self.email}"

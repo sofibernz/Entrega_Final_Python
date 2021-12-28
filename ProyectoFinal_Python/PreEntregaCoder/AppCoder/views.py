@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from AppCoder.models import Clientes
 from AppCoder.forms import ClientesFormulario
+from AppCoder.forms import ConsultasFormulario
+from AppCoder.models import Consultas
 
 
 # Create your views here.
@@ -49,4 +51,29 @@ def clientesFormulario(request):
         miFormulario= ClientesFormulario()
 
     return render(request, 'AppCoder/clientesFormulario.html', {'miFormulario': miFormulario})
+
+
+def consultasFormulario(request):
+
+    if request.method == 'POST':
+       
+        miFormulario = ConsultasFormulario(request.POST)
+
+        print(miFormulario)
+
+        if miFormulario.is_valid:
+
+            informacion = miFormulario.cleaned_data
+
+            consultas = Consultas(consulta=informacion['consulta'], nombre=informacion['nombre'], telefono=informacion['telefono'], email=informacion['email'])
+
+            consultas.save()
+
+            return render(request, 'AppCoder/inicio.html')
+
+    else:
+
+        miFormulario= ConsultasFormulario()
+
+    return render(request, 'AppCoder/consultasFormulario.html', {'miFormulario': miFormulario})
 

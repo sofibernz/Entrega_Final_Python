@@ -23,6 +23,7 @@ La pagina consta de un menu que lleva a las siguientes vistas:
 
 ## Construido con 🛠️ <br>
 Django - Framework de desarrollo web de código abierto, escrito en Python, que respeta el patrón de diseño conocido como modelo–vista–controlador. <br>
+
 Python - Lenguaje de programación interpretado cuya filosofía hace hincapié en la legibilidad de su código.
 
 ## Autores ✒️ <br>

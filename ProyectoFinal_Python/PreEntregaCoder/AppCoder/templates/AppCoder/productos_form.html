@@ -10,14 +10,15 @@
             <div class="container px-5">
             <br><br>
                 <div class="row gx-5 align-items-center">
-                   <h3> Formulario de productos </h3>
+                    <br><br><br><br><br><br>
+                    <h3> Formulario de productos </h3>
                         
                     <form method="POST"> {% csrf_token %}
 
                         {{form.as_p}}
             
             
-                        <input type="submit" value="Enviar" />
+                        <input class="btn btn-primary" type="submit" value="Enviar" />
             
                     </form>
                    

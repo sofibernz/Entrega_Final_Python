@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.views.generic import edit
 from AppCoder.models import Cursos
-from AppCoder.forms import ConsultasFormulario, UserRegisterForm
+from AppCoder.forms import ConsultasFormulario, UserRegisterForm, UserEditForm
 from AppCoder.models import Consultas, Productos
 
 from django.views.generic import ListView
@@ -16,6 +16,9 @@ from django.contrib.auth.models import User
 from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
 
 from django.contrib.auth import login, logout, authenticate
+
+from django.contrib.auth.decorators import login_required
+
 
 
 
@@ -71,6 +74,7 @@ def consultasFormulario(request):
     return render(request, 'AppCoder/consultasFormulario.html', {'miFormulario': miFormulario})
 
 
+@login_required
 def busquedaCurso(request):
 
     return render(request, 'AppCoder/busquedaCurso.html')
@@ -94,8 +98,6 @@ def buscar(request):
 
 
 
-
-
 class ProductoList(ListView):
 
     model = Productos
@@ -105,6 +107,7 @@ class ProductoDetalle(DetailView):
 
     model = Productos
     template_name= "AppCoder/productos_detalle.html"
+
 
 class ProductoCreacion(CreateView):
 
@@ -116,6 +119,7 @@ class ProductoUpdate(UpdateView):
     model = Productos
     success_url = "../producto/list"
     fields = ["nombreProd", "precio"]
+
 
 class ProductoDelete(DeleteView):
     model = Productos
@@ -181,3 +185,32 @@ def register(request):
 
       return render(request,"AppCoder/register.html" ,  {"form":form})
 
+
+@login_required
+def editarPerfil(request):
+
+    usuario = request.user
+
+    if request.method == 'POST':
+
+        miFormulario = UserEditForm(request.POST)
+
+        if miFormulario.is_valid():
+
+            informacion = miFormulario.cleaned_data
+
+            usuario.email = informacion['email']
+            usuario.password1 = informacion['password1']
+            usuario.password2 = informacion['password2']
+            usuario.last_name = informacion['last_name']
+            usuario.first = informacion['first_name']
+
+            usuario.save()
+
+            return render(request, 'Appcoder/inicio.html')
+
+    else:
+
+        miFormulario = UserEditForm(initial={'email':usuario.email})
+
+    return render(request, "AppCoder/editarPerfil.html", {"miFormulario":miFormulario, "usuario":usuario})

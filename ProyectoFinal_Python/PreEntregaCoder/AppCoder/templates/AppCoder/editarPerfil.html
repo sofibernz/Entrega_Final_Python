@@ -4,6 +4,7 @@
 
 {% block contenido %}
 
+
 <!-- Content section 1-->
         <section id="scroll">
             
@@ -12,18 +13,32 @@
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6 order-lg-1">
                         <div class="p-5">
-                            
-                            <h1>Crear usuario</h1>
-                            
-                            <form action="" method="POST">
+                           
+                            <h1>Editar datos de usuario</h1>
 
-                                {% csrf_token %}
+                            <form action="" method="POST">  {% csrf_token %}
+
+                                <table>
                         
-                                {{form.as_p}}
+                                    {{ miFormulario.as_table }}
                         
-                                <input type="submit" value="Crear usuario">
+                        
+                                </table>
+                        
+                        
+                                <input type="submit" value="Editar datos">
                         
                             </form>
+
+
+
+
+
+
+
+
+
+
 
                         </div>
                     </div>

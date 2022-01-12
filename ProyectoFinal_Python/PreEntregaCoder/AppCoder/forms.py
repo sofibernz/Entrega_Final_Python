@@ -20,8 +20,23 @@ class UserRegisterForm(UserCreationForm):
 
     last_name = forms.CharField()
     first_name = forms.CharField()
-    imagen_avatar = forms.ImageField(required=False)
+    #imagen_avatar = forms.ImageField(required=False)
 
     class Meta:
         model = User
-        fields = ['username', 'email', 'password1', 'password2', 'last_name', 'first_name'] 
+        fields = ['username', 'email', 'password1', 'password2', 'last_name', 'first_name']
+
+
+class UserEditForm(UserCreationForm):
+
+    email = forms.EmailField(label="Modificar e-mail")
+    password1 = forms.CharField(label="Contraseña")
+    password2 = forms.CharField(label="Modificar contraseña", widget=forms.PasswordInput)
+    last_name = forms.CharField(label="Modificar apellido")
+    first_name = forms.CharField(label="Modificar nombre")
+
+    class Meta:
+
+        model = User
+        fields = ['email', 'password1', 'password2']
+
